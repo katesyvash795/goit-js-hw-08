@@ -15,8 +15,6 @@ const saveTimeThrottled = throttle(function (currentTime) {
 if (savedTime !== null) {
   player.setCurrentTime(savedTime)
     .then(function () {
-
-      player.play();
     })
     .catch(function (error) {
       console.error('Помилка при встановленні часу відтворення:', error);
